@@ -1,14 +1,12 @@
-const menuIcon = document.querySelector('.myIcon');
+const openMenu = document.querySelector('.menu-btn');
+const menuIcon = document.querySelector('#main-bar');
+const closeMenu = document.querySelector('.myIcon');
 
-menuIcon.addEventListener('click', ()=>{
-    const menuList = document.querySelector('.nav-bar');
-    menuList.classList.toggle('hide');
-    if(menuIcon.innerHTML === '='){
-        menuIcon.innerHTML = 'x'
-    }
-    else if(menuIcon.innerHTML === 'x'){
-        menuIcon.innerHTML = "="
-    }
-    // console.log("fuck you")
+
+openMenu.addEventListener("click", ()=>{
+    menuIcon.classList.add('active');
 })
 
+closeMenu.addEventListener("click", ()=>{
+    menuIcon.classList.remove('active');
+})

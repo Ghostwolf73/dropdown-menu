@@ -11,19 +11,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@500&family=Edu+QLD+Beginner:wght@400;600;700&family=Edu+TAS+Beginner:wght@700&family=Josefin+Sans:wght@300&family=Lato&family=Montserrat:wght@100;600&family=Mouse+Memoirs&family=Poppins:ital,wght@0,500;1,200&family=Quicksand:wght@300&family=Roboto:wght@100;300&family=Ubuntu:wght@300&family=Work+Sans:wght@200&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        
     <title>dropdown</title>
 </head>
 
 <body>
-    <p class="myIcon">=</p>
-
-    <nav class="nav-bar hide">
-        <ul class="nav-links">
-            <li class="active" onclick="test()"><a href="#Home">Home</a></li>
-            <li onclick="test()"><a href="#About">About</a></li>
-            <li onclick="test()"><a href="#Services">Services</a></li>
-            <li onclick="test()"><a href="#Contact">Contact</a></li>
-        </ul>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+   
+    <nav class="nav-bar" id="main-bar">
+        <div class="myIcon">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="nav-links">
+            <div class="active item"><a href="#Home">Home</a></div>
+            <div class="item"><a href="#About">About</a></div>
+            <div class="item"><a href="#Services">Services</a></div>
+            <div class="item"><a href="#Contact">Contact</a></div>
+        </div>
     </nav>
     <script src="./index.js"></script>
 </body>
